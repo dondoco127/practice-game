@@ -1,1 +1,1 @@
-# practice-game
+# practice
