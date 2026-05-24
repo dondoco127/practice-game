@@ -1,0 +1,165 @@
+/* ゲーム画面 */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+/* ゲーム画面のコンテナ */
+.quiz-container {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 情報表示のコンテナ */
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 地図表示のコンテナ */
+.map-container {
+    margin-bottom: 20px;
+    border: 4px solid #333;
+    border-radius: 5px;
+    background-color: #75c0eb;
+}
+
+/* svg表示*/
+svg {
+    width: 100%;
+    height: auto;
+}
+
+/* 遊び方ボタン */
+#openHowtoDialogButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #fffeb1;
+    color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #f3e520;
+}
+
+/* 遊び方ダイアログの閉じるボタン */
+#closeHowtoDialogButton {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #dfdfdd;
+    color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #474746;
+}
+
+/* スタートボタン */
+#startButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #7388fd;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3a4ad4;
+}
+
+/* スコア表示 */
+#scoreDisplay {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 回答入力欄 */
+#answerDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 次へボタン */
+#nextButton {
+    padding: 5px 10px;
+    margin-left: 20px; 
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #dfdfdd;
+    color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #474746;
+}
+
+/* 次へボタンにフォーカスした時 */
+#nextButton:focus {
+    outline: none;
+    box-shadow:
+        0 0 10px #fff,
+        0 0 20px #ff0000;
+    transform: scale(1.05);
+}
+
+/* 回答入力欄 */
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 25px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* 正誤表示 */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 正誤表示の空間確保 */
+#resultText {
+    min-height: 26px;
+}
+
+/* やめるボタン */
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff9999;
+    color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #cf3b3b;
+}
+
+/* リザルトの閉じるボタン */
+#resultDialogButton {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #dfdfdd;
+    color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #474746;
+}
